@@ -1,27 +1,27 @@
 import cv2
 
 
-# Create our body classifier
+# Crear nuestro clasificador de cuerpos
 
 
-# Initiate video capture for video file
+# Inicializar la captura de video para nuestro archivo de video
 cap = cv2.VideoCapture('walking.avi')
 
-# Loop once video is successfully loaded
+# Comenzar el bucle una vez que el video esté cargado exitosamente
 while True:
     
-    # Read first frame
+    # Leer el primer cuadro
     ret, frame = cap.read()
 
-    #Convert Each Frame into Grayscale
+    # Convertir cada cuadro a escala de grises
     
-    # Pass frame to our body classifier
+    # Pasar el cuadro a nuestro clasificador de cuerpos
     
     
-    # Extract bounding boxes for any bodies identified
+    # Extraer las cajas envolventes para cualquier cuerpo identificado
     
 
-    if cv2.waitKey(1) == 32: #32 is the Space Key
+    if cv2.waitKey(1) == 32: #32 es la barra espaciadora
         break
 
 cap.release()
